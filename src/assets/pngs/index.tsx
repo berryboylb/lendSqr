@@ -6,7 +6,7 @@ import AuditLogo from './auditLogs.png';
 import FeeAndPricing from './feeAndPricing.png';
 import FeesandCharges from './feesandCharges.png';
 import Guarantors from "./guarantors.png";
-import Karma from "./Karma.png";
+import Karma from "./karma.png";
 import Loan from "./loan.png";
 import LoanRequest from "./LoanRequest.png";
 import Organization from "./organization.png";
