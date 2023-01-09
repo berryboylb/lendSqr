@@ -1,0 +1,260 @@
+.con__ {
+    position: relative;
+
+    
+
+    .filter_ {
+        position: absolute;
+        left: 2%;
+        bottom: 100%;
+        background: #FFFFFF;
+        border: 1px solid rgba(84, 95, 125, 0.14);
+        box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+        border-radius: 4px;
+        padding: 1rem;
+        width: 270px;
+        z-index: 99;
+
+        .fields {
+            width: 100%;
+
+
+
+            label {
+                display: block;
+                font-family: 'Work Sans', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: .875rem;
+                color: #545F7D;
+            }
+
+            input,
+            select {
+                margin: .3rem 0 .5rem 0;
+                outline: none;
+                width: 100%;
+                opacity: 0.2;
+                border: 1px solid #213F7D;
+                border-radius: 8px;
+                font-family: 'Work Sans', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: .875rem;
+                color: #545F7D;
+                opacity: 0.7;
+                padding: .5rem;
+                text-transform: capitalize;
+
+                &::placeholder {
+                    font-family: 'Work Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: .875rem;
+                    color: #545F7D;
+                    opacity: 0.7;
+                }
+            }
+
+            .err {
+                display: block;
+                margin: .2rem 0;
+                font-size: .75rem;
+                color: #E4033B;
+            }
+        }
+
+        .btns_ {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+
+            button {
+                width: 48%;
+                border-radius: 8px;
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 600;
+                font-size: .875rem;
+                padding: .75rem 0;
+            }
+
+            .reset {
+                border: 1px solid #545F7D;
+            }
+
+            .filter {
+                background: #39CDCC;
+                border: 1px solid #39CDCC;
+                color: #fff;
+
+            }
+        }
+    }
+}
+
+.paginate {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .filter {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: .875rem;
+        color: #545F7D;
+
+        button {
+            margin: 0 .2rem;
+            background: rgba(33, 63, 125, 0.1);
+            border-radius: 4px;
+            padding: .5rem;
+            color: #213F7D;
+        }
+    }
+
+    ul {
+        .ctrl {
+            background: rgba(33, 63, 125, 0.1);
+            border-radius: 4px;
+            color: #213F7D;
+        }
+
+        li {
+            display: inline-block;
+            font-family: 'Work Sans', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            color: #545F7D;
+            opacity: 0.6;
+            margin: 0 .2rem;
+            padding: .5rem;
+            cursor: pointer;
+            border-radius: 4px;
+            padding: .5rem;
+            caret-color: transparent;
+
+            &:hover {
+                background: rgba(33, 63, 125, 0.1);
+                color: #213F7D;
+                opacity: 1;
+                transition: all .5ms ease-in;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .con__ {
+
+        .filter_ {
+
+            .fields {
+
+                label {
+                    font-size: .75rem;
+                }
+
+                input,
+                select {
+                    font-size: .75rem;
+
+                    &::placeholder {
+                        font-size: .75rem;
+                    }
+                }
+
+                .err {
+                    font-size: .7rem;
+                }
+            }
+
+            .btns_ {
+
+                button {
+                    font-size: .75rem;
+                }
+            }
+        }
+    }
+
+    .paginate {
+        .filter {
+            font-size: .75rem;
+        }
+
+        ul {
+            li {
+                font-size: .875rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .con__ {
+
+        .filter_ {
+
+            .fields {
+
+                label {
+                    font-size: .75rem;
+                }
+
+                input,
+                select {
+                    font-size: .75rem;
+
+                    &::placeholder {
+                        font-size: .75rem;
+                    }
+                }
+
+                .err {
+                    font-size: .7rem;
+                }
+            }
+
+            .btns_ {
+
+                button {
+                    font-size: .75rem;
+                }
+            }
+        }
+    }
+
+    .paginate {
+        .filter {
+            text-align: center;
+            width: 100%;
+            margin: .3rem 0;
+            justify-content: center;
+        }
+
+        ul {
+            li {
+                font-size: .875rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:540px) {
+    .con__ {
+        .filter_ {
+            width: 100%;
+            left: 0;
+        }
+    }
+}

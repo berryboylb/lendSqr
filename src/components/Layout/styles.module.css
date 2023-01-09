@@ -1,0 +1,30 @@
+.dashboard__ .dashboard__body {
+  position: relative;
+  background: #fff;
+  min-height: 100vh;
+  width: calc(100% - 18rem);
+  left: 18rem;
+  transition: all 0.5s ease;
+}
+
+.dashboard__ .expand_dashboard__body {
+  position: relative;
+  width: calc(100% - 6rem);
+  left: 6rem;
+  min-height: 100vh;
+  transition: all 0.5s ease;
+  background: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .dashboard__ .dashboard__body {
+    width: calc(100% - 10rem);
+    left: 10rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard__ .dashboard_auto {
+    width: 100%;
+  }
+}

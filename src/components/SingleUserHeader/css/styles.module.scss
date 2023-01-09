@@ -1,0 +1,227 @@
+.con__ {
+    background: #FFFFFF;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .top {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .imgNameCon {
+            display: flex;
+            align-items: center;
+
+            .imgCon {
+                width: 100px;
+                height: 100px;
+
+                img {
+                    border-radius: 50%;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .nameCon {
+                margin-left: 1rem;
+
+                h3 {
+                    font-family: 'Work Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1.375rem;
+                    color: #213F7D;
+                }
+
+                p {
+                    font-family: 'Work Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: .875rem;
+                    color: #545F7D;
+                    margin-top: .5rem;
+                }
+            }
+        }
+
+        .tier {
+            margin: 0 1rem;
+            border-left: 1px solid #545F7D;
+            border-right: 1px solid #545F7D;
+            padding: 1rem;
+
+            h4 {
+                font-family: 'Work Sans', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: .875rem;
+                color: #545F7D;
+            }
+
+            .rate {
+
+                .first,
+                .star {
+                    color: #E9B200;
+                }
+            }
+        }
+
+        .bank__ {
+            h1 {
+                font-family: 'Work Sans', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.375rem;
+                color: #213F7D;
+            }
+
+            p {
+                font-family: 'Work Sans', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 0.75rem;
+                color: #213F7D;
+            }
+        }
+    }
+
+    .bottom {
+        margin-top: 3rem;
+        font-family: SFCompactText;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        button {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.8);
+            padding: .5rem 1rem;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .con__ {
+
+        .top {
+
+            .imgNameCon {
+
+                .imgCon {
+                    width: 80px;
+                    height: 80px;
+                }
+
+                .nameCon {
+                    margin-left: 1rem;
+
+                    h3 {
+                        font-size: 1rem;
+                    }
+
+                    p {
+                        font-size: .75rem;
+                    }
+                }
+            }
+
+            .tier {
+
+                h4 {
+                    font-size: .75rem;
+                }
+
+
+            }
+
+            .bank__ {
+                h1 {
+                    font-size: 1rem;
+                }
+
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+
+        .bottom {
+
+            button {
+                font-size: .875rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:630px) {
+    .con__ {
+
+        .top {
+
+            .imgNameCon {
+                width: 100%;
+                .imgCon {
+                    width: 80px;
+                    height: 80px;
+                }
+
+                .nameCon {
+                    margin-left: 1rem;
+
+                    h3 {
+                        font-size: 1rem;
+                    }
+
+                    p {
+                        font-size: .75rem;
+                    }
+                }
+            }
+
+            .tier {
+                margin-top: 1rem;
+                border-left: none;
+                margin-left: 0;
+                padding-left: 0;
+
+                h4 {
+                    font-size: .75rem;
+                }
+
+
+            }
+
+            .bank__ {
+                margin-top: 1rem;
+                h1 {
+                    font-size: 1rem;
+                }
+
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+
+        .bottom {
+            margin-top: 1rem;
+            justify-content: flex-start;
+
+            button {
+                font-size: .875rem;
+            }
+        }
+    }
+}

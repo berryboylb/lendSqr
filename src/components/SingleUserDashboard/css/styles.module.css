@@ -1,0 +1,74 @@
+.back {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #545F7D;
+}
+.back:hover {
+  opacity: 0.8;
+  transition: all 0.5ms ease-in;
+}
+.back .icon_ {
+  margin-right: 1rem;
+}
+
+.header_ {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header_ h1 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #213F7D;
+}
+.header_ div button {
+  border-radius: 8px;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  padding: 0.75rem;
+  margin: 0 0.5rem;
+}
+.header_ div .blacklist {
+  border: 1px solid #E4033B;
+  color: #E4033B;
+}
+.header_ div .activate {
+  border: 1px solid #39CDCC;
+  color: #39CDCC;
+}
+
+@media screen and (max-width: 1024px) {
+  .back {
+    font-size: 0.875rem;
+  }
+  .header_ h1 {
+    font-size: 1.2rem;
+  }
+  .header_ div button {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .back {
+    font-size: 0.875rem;
+  }
+  .header_ h1 {
+    font-size: 1.2rem;
+  }
+  .header_ div {
+    width: 100%;
+  }
+  .header_ div button {
+    width: 100%;
+    margin: 1rem 0 0 0;
+  }
+}/*# sourceMappingURL=styles.module.css.map */

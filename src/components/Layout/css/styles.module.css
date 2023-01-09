@@ -1,0 +1,23 @@
+.dashboard__ {
+  width: 100%;
+  height: calc(100vh - 70px);
+  position: relative;
+  display: flex;
+}
+.dashboard__ .con__ {
+  width: calc(100% - 18rem);
+  padding: 3rem;
+  overflow-y: auto;
+  background: #E5E5E5;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard__ {
+    display: block;
+    height: auto;
+  }
+  .dashboard__ .con__ {
+    padding: 1rem;
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.module.css.map */

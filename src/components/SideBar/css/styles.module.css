@@ -1,0 +1,148 @@
+.con {
+  width: 18rem;
+  background: #fff;
+  height: 100%;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+  overflow-y: auto;
+}
+.con .btn {
+  display: flex;
+  align-items: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  color: #213F7D;
+  font-weight: 500;
+  margin: 2rem 0;
+  padding: 0 2rem;
+}
+.con .btn:hover {
+  opacity: 0.8;
+}
+.con .btn .first {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.con .btn .second {
+  display: inline-block;
+  margin-left: 1rem;
+}
+.con ul .link {
+  color: #213F7D;
+  font-family: "Work Sans", sans-serif;
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  position: relative;
+}
+.con ul .link:hover::before {
+  content: "";
+  position: absolute;
+  border-left: 3px solid #39CDCC;
+  top: 0;
+  bottom: 0;
+}
+.con ul .link:hover {
+  background: #ebf9f9;
+}
+.con ul .link a {
+  margin: 0 2rem;
+  opacity: 0.5;
+}
+.con ul .link a img {
+  width: 16px;
+  height: 16px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.con ul .link a span,
+.con ul .link a img {
+  margin-right: 1rem;
+}
+.con ul .link a h3,
+.con ul .link a span,
+.con ul .link a img {
+  display: inline-block;
+}
+.con ul .link:hover a {
+  color: #213F7D;
+  font-weight: 500;
+  opacity: 1;
+}
+.con .title {
+  margin: 0.5rem 2rem;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.75rem;
+  color: #545F7D;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.con .bottom__ {
+  padding: 0.5rem 2rem;
+  border-top: 1px solid #213F7D;
+}
+.con .bottom__ button {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  color: #213F7D;
+  margin: 1.5rem 0;
+}
+.con .bottom__ button img {
+  display: inline-block;
+  margin-right: 1rem;
+  width: 16px;
+  height: 16px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.con .bottom__ h6 {
+  color: #213F7D;
+  font-size: 0.75rem;
+}
+
+.active__ {
+  transform: translate(0%);
+  position: absolute;
+  left: 0;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .con .btn {
+    font-size: 0.75rem;
+  }
+  .con ul .link {
+    font-size: 0.75rem;
+  }
+  .con .title {
+    font-size: 0.7rem;
+  }
+  .con .bottom__ button {
+    font-size: 0.75rem;
+  }
+  .con .bottom__ h6 {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .con {
+    transform: translate(-100%);
+    position: absolute;
+    z-index: 50;
+  }
+  .active__ {
+    transform: translate(0%);
+    width: calc(100% - 50vw);
+  }
+}
+@media screen and (max-width: 540px) {
+  .con {
+    transform: translate(-100%);
+    position: absolute;
+    z-index: 50;
+  }
+  .active__ {
+    transform: translate(0%);
+    width: calc(100% - 20vw);
+  }
+}/*# sourceMappingURL=styles.module.css.map */

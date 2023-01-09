@@ -1,0 +1,221 @@
+.con__ {
+  position: relative;
+}
+.con__ .filter_ {
+  position: absolute;
+  left: 2%;
+  bottom: 100%;
+  background: #FFFFFF;
+  border: 1px solid rgba(84, 95, 125, 0.14);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  padding: 1rem;
+  width: 270px;
+  z-index: 99;
+}
+.con__ .filter_ .fields {
+  width: 100%;
+}
+.con__ .filter_ .fields label {
+  display: block;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #545F7D;
+}
+.con__ .filter_ .fields input,
+.con__ .filter_ .fields select {
+  margin: 0.3rem 0 0.5rem 0;
+  outline: none;
+  width: 100%;
+  opacity: 0.2;
+  border: 1px solid #213F7D;
+  border-radius: 8px;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #545F7D;
+  opacity: 0.7;
+  padding: 0.5rem;
+  text-transform: capitalize;
+}
+.con__ .filter_ .fields input::-moz-placeholder, .con__ .filter_ .fields select::-moz-placeholder {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #545F7D;
+  opacity: 0.7;
+}
+.con__ .filter_ .fields input:-ms-input-placeholder, .con__ .filter_ .fields select:-ms-input-placeholder {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #545F7D;
+  opacity: 0.7;
+}
+.con__ .filter_ .fields input::placeholder,
+.con__ .filter_ .fields select::placeholder {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #545F7D;
+  opacity: 0.7;
+}
+.con__ .filter_ .fields .err {
+  display: block;
+  margin: 0.2rem 0;
+  font-size: 0.75rem;
+  color: #E4033B;
+}
+.con__ .filter_ .btns_ {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.con__ .filter_ .btns_ button {
+  width: 48%;
+  border-radius: 8px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.75rem 0;
+}
+.con__ .filter_ .btns_ .reset {
+  border: 1px solid #545F7D;
+}
+.con__ .filter_ .btns_ .filter {
+  background: #39CDCC;
+  border: 1px solid #39CDCC;
+  color: #fff;
+}
+
+.paginate {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.paginate .filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #545F7D;
+}
+.paginate .filter button {
+  margin: 0 0.2rem;
+  background: rgba(33, 63, 125, 0.1);
+  border-radius: 4px;
+  padding: 0.5rem;
+  color: #213F7D;
+}
+.paginate ul .ctrl {
+  background: rgba(33, 63, 125, 0.1);
+  border-radius: 4px;
+  color: #213F7D;
+}
+.paginate ul li {
+  display: inline-block;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #545F7D;
+  opacity: 0.6;
+  margin: 0 0.2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0.5rem;
+  caret-color: transparent;
+}
+.paginate ul li:hover {
+  background: rgba(33, 63, 125, 0.1);
+  color: #213F7D;
+  opacity: 1;
+  transition: all 0.5ms ease-in;
+}
+
+@media screen and (max-width: 1024px) {
+  .con__ .filter_ .fields label {
+    font-size: 0.75rem;
+  }
+  .con__ .filter_ .fields input,
+.con__ .filter_ .fields select {
+    font-size: 0.75rem;
+  }
+  .con__ .filter_ .fields input::-moz-placeholder, .con__ .filter_ .fields select::-moz-placeholder {
+    font-size: 0.75rem;
+  }
+  .con__ .filter_ .fields input:-ms-input-placeholder, .con__ .filter_ .fields select:-ms-input-placeholder {
+    font-size: 0.75rem;
+  }
+  .con__ .filter_ .fields input::placeholder,
+.con__ .filter_ .fields select::placeholder {
+    font-size: 0.75rem;
+  }
+  .con__ .filter_ .fields .err {
+    font-size: 0.7rem;
+  }
+  .con__ .filter_ .btns_ button {
+    font-size: 0.75rem;
+  }
+  .paginate .filter {
+    font-size: 0.75rem;
+  }
+  .paginate ul li {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .con__ .filter_ .fields label {
+    font-size: 0.75rem;
+  }
+  .con__ .filter_ .fields input,
+.con__ .filter_ .fields select {
+    font-size: 0.75rem;
+  }
+  .con__ .filter_ .fields input::-moz-placeholder, .con__ .filter_ .fields select::-moz-placeholder {
+    font-size: 0.75rem;
+  }
+  .con__ .filter_ .fields input:-ms-input-placeholder, .con__ .filter_ .fields select:-ms-input-placeholder {
+    font-size: 0.75rem;
+  }
+  .con__ .filter_ .fields input::placeholder,
+.con__ .filter_ .fields select::placeholder {
+    font-size: 0.75rem;
+  }
+  .con__ .filter_ .fields .err {
+    font-size: 0.7rem;
+  }
+  .con__ .filter_ .btns_ button {
+    font-size: 0.75rem;
+  }
+  .paginate .filter {
+    text-align: center;
+    width: 100%;
+    margin: 0.3rem 0;
+    justify-content: center;
+  }
+  .paginate ul li {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .con__ .filter_ {
+    width: 100%;
+    left: 0;
+  }
+}/*# sourceMappingURL=styles.module.css.map */

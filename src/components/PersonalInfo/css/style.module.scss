@@ -1,0 +1,148 @@
+.block {
+    background: #FFFFFF;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    margin-top: 2rem;
+    padding: 0 1rem;
+
+    .mini_block {
+        margin-top: 1rem;
+
+        h3 {
+            font-family: 'Work Sans', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1rem;
+            color: #213F7D;
+        }
+
+        .items_con {
+            padding: 0 0 1rem 0;
+            border-bottom: 1px solid #213F7D;
+            display: flex;
+            align-items: flex-start;
+            // justify-content: space-between;
+            flex-wrap: wrap;
+
+            div {
+                width: 18%;
+                margin-top: 1rem;
+                margin-right: 2%;
+
+                h4 {
+                    font-family: 'Work Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: .75rem;
+                    text-transform: uppercase;
+                    color: #545F7D;
+                }
+
+                h2 {
+                    font-family: 'Work Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 550;
+                    font-size: 1rem;
+                    color: #545F7D;
+                    word-break: break-all;
+                    span {
+                    font-family: 'Work Sans', sans-serif;
+                    font-weight: 550;
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            border-bottom: none;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .block {
+
+        .mini_block {
+
+            h3 {
+                font-size: .875rem;
+            }
+
+            .items_con {
+
+                div {
+                    width: 23%;
+                    margin-top: 1rem;
+                    margin-right: 2%;
+
+                    h4 {
+                        font-size: .7rem;
+                    }
+
+                    h2 {
+                        font-size: .875rem;
+                    }
+                }
+            }
+
+           
+        }
+    }
+}
+
+@media screen and (max-width:919px) {
+    .block {
+
+        .mini_block {
+
+            
+
+            .items_con {
+
+                div {
+                    width: 30%;
+                    margin-right: 3.33%;
+
+                
+                }
+            }
+
+
+        }
+    }
+}
+
+@media screen and (max-width:540px) {
+    .block {
+        .mini_block {
+
+            .items_con {
+
+                div {
+                    width: 48%;
+                    margin-right: 2%;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media screen and (max-width:370px) {
+    .block {
+        .mini_block {
+
+            .items_con {
+
+                div {
+                    width: 100%;
+                    margin-right: 0%;
+                }
+            }
+
+
+        }
+    }
+}

@@ -1,0 +1,143 @@
+.con_ {
+  background: #FFFFFF;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+.con_ table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 1300px;
+}
+.con_ table th,
+.con_ table td {
+  text-align: left;
+  padding: 8px;
+}
+.con_ table thead tr th {
+  color: #545F7D;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Work Sans", sans-serif;
+  margin-left: 0;
+  padding: 0;
+}
+.con_ table thead tr th img {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+.con_ table tbody tr {
+  border-bottom: 1px solid rgba(33, 63, 125, 0.1);
+}
+.con_ table tbody tr td {
+  padding: 1rem 0;
+  color: #545F7D;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-family: "Work Sans", sans-serif;
+}
+.con_ table tbody tr td .popup {
+  background: #FFFFFF;
+  border: 1px solid rgba(84, 95, 125, 0.04);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  padding: 0 0.5rem;
+  width: 180px;
+  z-index: 99;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.con_ table tbody tr td .popup button {
+  padding: 0.7rem 0;
+  width: 100%;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #545F7D;
+}
+.con_ table tbody tr td .popup button img {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.con_ table tbody tr .option {
+  text-align: right;
+  padding-left: 0.75rem;
+  cursor: pointer;
+  position: relative;
+}
+.con_ table tbody tr .option .icon {
+  font-size: 1.3rem;
+}
+.con_ table tbody tr .option:hover {
+  opacity: 0.8;
+}
+.con_ table tbody tr .status__ {
+  border-radius: 100px;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invisible_ {
+  position: fixed;
+  inset: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .con_ {
+    background: #FFFFFF;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    padding: 1rem;
+    overflow-x: auto;
+  }
+  .con_ table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+  .con_ table th,
+.con_ table td {
+    text-align: left;
+    padding: 8px;
+  }
+  .con_ table thead tr th {
+    color: #545F7D;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Work Sans", sans-serif;
+  }
+  .con_ table thead tr th img {
+    display: inline-block;
+    margin-left: 0.5rem;
+  }
+  .con_ table tbody tr {
+    border-bottom: 1px solid rgba(33, 63, 125, 0.1);
+  }
+  .con_ table tbody tr td {
+    padding: 1rem 0;
+    color: #545F7D;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: "Work Sans", sans-serif;
+  }
+  .con_ table tbody tr .status__ {
+    border-radius: 100px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=styles.module.css.map */

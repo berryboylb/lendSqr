@@ -1,0 +1,192 @@
+.con_ {
+    background: #FFFFFF;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    padding: 1rem;
+    overflow-x: auto;
+
+
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        // width: 100%;
+        width: 1300px;
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+
+
+        thead {
+            tr {
+                th {
+                    color: #545F7D;
+                    font-size: .75rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-family: 'Work Sans', sans-serif;
+                    margin-left: 0;
+                    padding: 0;
+
+                    img {
+                        display: inline-block;
+                        margin-left: .5rem;
+                    }
+                }
+
+
+            }
+        }
+
+        tbody {
+            tr {
+                border-bottom: 1px solid rgba(33, 63, 125, 0.1);
+
+                td {
+                    padding: 1rem 0;
+                    color: #545F7D;
+                    font-size: .875rem;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    font-family: 'Work Sans', sans-serif;
+
+                    .popup {
+                        background: #FFFFFF;
+                        border: 1px solid rgba(84, 95, 125, 0.04);
+                        box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+                        border-radius: 4px;
+                        padding: 0 .5rem;
+                        width: 180px;
+                        z-index: 99;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+
+                        button {
+                            padding: .7rem 0;
+                            width: 100%;
+                            font-family: 'Work Sans';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: .875rem;
+                            color: #545F7D;
+
+
+                            img {
+                                display: inline-block;
+                                margin-right: .5rem;
+                            }
+
+                            // &:hover {
+                            //     opacity: .9;
+                            //     transition: opacity .5ms ease-in;
+                            // }
+                        }
+                    }
+
+                }
+
+                .option {
+                    text-align: right;
+                    padding-left: .75rem;
+                    cursor: pointer;
+                    position: relative;
+
+                    .icon {
+                        font-size: 1.3rem;
+                    }
+
+                    &:hover {
+                        opacity: .8;
+                    }
+                }
+
+
+
+
+                .status__ {
+                    border-radius: 100px;
+                    padding: .5rem 0;
+                    margin: .5rem 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+.invisible_ {
+    position: fixed;
+    inset: 0;
+}
+
+@media screen and (max-width:1024px) {
+    .con_ {
+        background: #FFFFFF;
+        border: 1px solid rgba(33, 63, 125, 0.06);
+        box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+        border-radius: 4px;
+        padding: 1rem;
+        overflow-x: auto;
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+
+            th,
+            td {
+                text-align: left;
+                padding: 8px;
+            }
+
+
+            thead {
+                tr {
+                    th {
+                        color: #545F7D;
+                        font-size: .75rem;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-family: 'Work Sans', sans-serif;
+
+                        img {
+                            display: inline-block;
+                            margin-left: .5rem;
+                        }
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    border-bottom: 1px solid rgba(33, 63, 125, 0.1);
+
+                    td {
+                        padding: 1rem 0;
+                        color: #545F7D;
+                        font-size: .875rem;
+                        font-weight: 400;
+                        text-transform: capitalize;
+                        font-family: 'Work Sans', sans-serif;
+                    }
+
+                    .status__ {
+                        border-radius: 100px;
+                        padding: .5rem 1rem;
+                        margin: .5rem 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
