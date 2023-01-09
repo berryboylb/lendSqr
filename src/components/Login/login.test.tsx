@@ -1,12 +1,7 @@
 import {
-  act,
-  renderHook,
-  render,
-  screen,
-  waitFor,
   fireEvent,
 } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+import { render, screen, userEvent } from "../../utils/test-utils";
 import { Provider } from "react-redux";
 import { store } from "../../store";
 import Login from ".";
