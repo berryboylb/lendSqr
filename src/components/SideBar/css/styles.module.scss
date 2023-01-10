@@ -39,6 +39,7 @@
             font-size: 1rem;
             letter-spacing: 2px;
             position: relative;
+            text-transform: capitalize;
 
             &:hover::before {
                 content: '';
@@ -120,19 +121,15 @@
 
 .active__ {
     transform: translate(0%);
-    position: absolute;
+    position: fixed;
+    top: 0;
     left: 0;
-    height: 100vh;
-    // width: calc(100% - 30vw);
-    // transition: transform 0.5s ease-in;
-    // z-index: 4;
+    bottom: 0;
 }
 
 
 @media screen and (max-width:1024px) {
     .con {
-
-
         .btn {
             font-size: .75rem;
         }
@@ -140,12 +137,6 @@
         ul {
             .link {
                 font-size: .75rem;
-
-                
-
-               
-
-            
             }
         }
 
@@ -169,8 +160,38 @@
 @media screen and (max-width:768px) {
     .con {
         transform: translate(-100%);
-        position: absolute;
+        position: fixed;
         z-index: 50;
+
+        .btn {
+
+            margin: 2rem 0;
+            padding: 0 1rem;
+        }
+
+        ul {
+            .link {
+                color: #213F7D;
+                font-family: 'Work Sans', sans-serif;
+                margin: 1.5rem 0;
+                padding: 1rem 0;
+
+                a {
+                    margin: 0 1rem;
+                    opacity: .5;
+                }
+
+            }
+        }
+
+        .title {
+            margin: .5rem 1rem;
+        }
+
+        .bottom__ {
+            padding: .5rem 1rem;
+
+        }
     }
 
     .active__ {

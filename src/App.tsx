@@ -3,7 +3,6 @@ import { Provider } from "react-redux";
 import { store }from "./store"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
-import reactLogo from "./assets/react.svg";
 import PrivateRoute from "./components/PrivateRoute";
 const Spinner = lazy(() => import("../src/components/Spinner"));
 const NotFound = lazy(() => import("../src/components/Error"));
@@ -14,7 +13,6 @@ const SingleUserDashboard = lazy(
 );
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <Provider store={store}>

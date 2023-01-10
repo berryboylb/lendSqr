@@ -5,7 +5,6 @@
     height: 70px;
     box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
 
-
     .imgCon {
         width: 18rem;
         padding: 0 2rem;
@@ -17,11 +16,14 @@
         justify-content: space-between;
         width: calc(100% - 18rem);
         padding: 0 3rem;
+        max-width: 1240px;
+        margin: 0 auto;
 
         form {
             display: flex;
             justify-content: space-between;
             width: 40%;
+            max-width: 400px;
 
             input {
                 width: 100%;
@@ -135,92 +137,90 @@
             }
         }
 
-        .burger {
-            display: none;
-            cursor: pointer;
-            z-index: 99;
-            caret-color: transparent;
 
-            .line0 {
-                width: 30px;
-                height: 2px;
-                background: #213F7D;
-                margin: 5px;
-                border-radius: 8px;
-                transition: all 0.3s ease;
-            }
+    }
 
-            .line1 {
-                width: 30px;
-                height: 2px;
-                background: #213F7D;
-                margin: 5px;
-                border-radius: 8px;
-                transition: all 0.3s ease;
-            }
+    .burger {
+        display: none;
+        cursor: pointer;
+        z-index: 99;
+        caret-color: transparent;
 
-            .line2 {
-                width: 30px;
-                height: 2px;
-                background: #213F7D;
-                margin: 5px;
-                border-radius: 8px;
-                transition: all 0.3s ease;
-            }
+        .line0 {
+            width: 30px;
+            height: 2px;
+            background: #213F7D;
+            margin: 5px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
         }
 
-        .bro {
-            display: none;
-            cursor: pointer;
-            z-index: 99;
-            caret-color: transparent;
+        .line1 {
+            width: 30px;
+            height: 2px;
+            background: #213F7D;
+            margin: 5px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
 
-            .line0 {
-                width: 30px;
-                height: 2px;
-                margin: 5px;
-                border-radius: 8px;
-                transform: rotate(-45deg) translate(-5px, 6px);
-                background: #213F7D;
-                transition: all 0.3s ease;
-            }
+        .line2 {
+            width: 30px;
+            height: 2px;
+            background: #213F7D;
+            margin: 5px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+    }
 
-            .line1 {
-                width: 30px;
-                height: 2px;
-                background: #213F7D;
-                margin: 5px;
-                border-radius: 8px;
-                transition: all 0.3s ease;
-                opacity: 0;
-            }
+    .bro {
+        display: none;
+        cursor: pointer;
+        z-index: 99;
+        caret-color: transparent;
 
-            .line2 {
-                width: 30px;
-                height: 2px;
-                background: #213F7D;
-                margin: 5px;
-                border-radius: 8px;
-                transition: all 0.3s ease;
-                transform: rotate(42deg) translate(-3.5px, -5.5px);
-                margin-top: 5px;
-            }
+        .line0 {
+            width: 30px;
+            height: 2px;
+            margin: 5px;
+            border-radius: 8px;
+            transform: rotate(-45deg) translate(-5px, 6px);
+            background: #213F7D;
+            transition: all 0.3s ease;
+        }
+
+        .line1 {
+            width: 30px;
+            height: 2px;
+            background: #213F7D;
+            margin: 5px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            opacity: 0;
+        }
+
+        .line2 {
+            width: 30px;
+            height: 2px;
+            background: #213F7D;
+            margin: 5px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            transform: rotate(42deg) translate(-3.5px, -5.5px);
+            margin-top: 5px;
         }
     }
 }
 
 @media screen and (max-width:1024px) {
     .header {
-
         .imgCon {
             width: 18rem;
             padding: 0 2rem;
-
-
         }
 
         .form {
-
             form {
                 display: flex;
                 justify-content: space-between;
@@ -228,23 +228,18 @@
 
                 input {
                     font-size: .75rem;
-
                     &::placeholder {
                         font-size: 0.7rem;
                     }
-
                 }
 
                 button {
                     font-size: .75rem;
-
-
                 }
             }
         }
 
         .profile {
-
             .docs {
                 font-size: .75rem;
             }
@@ -344,11 +339,12 @@
                     display: none;
                 }
             }
+        }
 
-            .bro,
-            .burger {
-                display: block;
-            }
+        .bro,
+        .burger {
+            display: block;
+            margin-right: 1rem;
         }
     }
 }
@@ -383,8 +379,6 @@
 
                 button {
                     font-size: .75rem;
-
-
                 }
             }
         }
@@ -397,8 +391,6 @@
 
             .notififcation {
                 font-size: .75rem;
-
-
             }
 
             .profileMain {
@@ -413,8 +405,6 @@
                     display: none;
                 }
             }
-
-
         }
     }
 }

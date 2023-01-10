@@ -34,6 +34,7 @@
   font-size: 1rem;
   letter-spacing: 2px;
   position: relative;
+  text-transform: capitalize;
 }
 .con ul .link:hover::before {
   content: "";
@@ -102,9 +103,10 @@
 
 .active__ {
   transform: translate(0%);
-  position: absolute;
+  position: fixed;
+  top: 0;
   left: 0;
-  height: 100vh;
+  bottom: 0;
 }
 
 @media screen and (max-width: 1024px) {
@@ -127,8 +129,28 @@
 @media screen and (max-width: 768px) {
   .con {
     transform: translate(-100%);
-    position: absolute;
+    position: fixed;
     z-index: 50;
+  }
+  .con .btn {
+    margin: 2rem 0;
+    padding: 0 1rem;
+  }
+  .con ul .link {
+    color: #213F7D;
+    font-family: "Work Sans", sans-serif;
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+  }
+  .con ul .link a {
+    margin: 0 1rem;
+    opacity: 0.5;
+  }
+  .con .title {
+    margin: 0.5rem 1rem;
+  }
+  .con .bottom__ {
+    padding: 0.5rem 1rem;
   }
   .active__ {
     transform: translate(0%);

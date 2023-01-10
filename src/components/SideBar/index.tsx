@@ -6,7 +6,7 @@ import {
   faChevronDown,
   faHome,
 } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {
   Users,
   AuditLogo,
@@ -37,33 +37,33 @@ type Props = {
 };
 
 const customers = [
-  { imgSrc: Users, name: "Users" },
-  { imgSrc: Guarantors, name: "Guarantors" },
-  { imgSrc: Loan, name: "Loans" },
-  { imgSrc: Shake, name: "Decision Models" },
-  { imgSrc: Savings, name: "Savings" },
-  { imgSrc: LoanRequest, name: "Loan Requests" },
-  { imgSrc: WhiteList, name: "Whitelist" },
-  { imgSrc: Karma, name: "Karma" },
+  { imgSrc: Users, name: "users" },
+  { imgSrc: Guarantors, name: "guarantors" },
+  { imgSrc: Loan, name: "loans" },
+  { imgSrc: Shake, name: "decision models" },
+  { imgSrc: Savings, name: "savings" },
+  { imgSrc: LoanRequest, name: "loan requests" },
+  { imgSrc: WhiteList, name: "whitelist" },
+  { imgSrc: Karma, name: "karma" },
 ];
 
 const business = [
-  { imgSrc: Organization, name: "Organization" },
-  { imgSrc: LoanRequest, name: "Loan Products" },
-  { imgSrc: SavingsProduct, name: "Savings Products" },
-  { imgSrc: FeesandCharges, name: "Fees and Charges" },
-  { imgSrc: Transaction, name: "Transactions" },
-  { imgSrc: Services, name: "Services" },
-  { imgSrc: SavingsAccount, name: "Service Account" },
-  { imgSrc: Settlements, name: "Settlements" },
-  { imgSrc: Reports, name: "Reports" },
+  { imgSrc: Organization, name: "organization" },
+  { imgSrc: LoanRequest, name: "loan products" },
+  { imgSrc: SavingsProduct, name: "savings products" },
+  { imgSrc: FeesandCharges, name: "fees and charges" },
+  { imgSrc: Transaction, name: "transactions" },
+  { imgSrc: Services, name: "services" },
+  { imgSrc: SavingsAccount, name: "service account" },
+  { imgSrc: Settlements, name: "settlements" },
+  { imgSrc: Reports, name: "reports" },
 ];
 
 const settings = [
-  { imgSrc: Preferences, name: "Preferences" },
-  { imgSrc: FeeAndPricing, name: "Fees and Pricing" },
-  { imgSrc: AuditLogo, name: "Audit Logs" },
-  { imgSrc: SystemMessages, name: "Systems Messages" },
+  { imgSrc: Preferences, name: "preferences" },
+  { imgSrc: FeeAndPricing, name: "fees and pricing" },
+  { imgSrc: AuditLogo, name: "audit logs" },
+  { imgSrc: SystemMessages, name: "systems messages" },
 ];
 
 const Index: React.FC<Props> = ({ mobileNav }) => {
@@ -71,7 +71,7 @@ const Index: React.FC<Props> = ({ mobileNav }) => {
   const activeStyle: {
     background: string;
   } = {
-    background: "#54A800",
+    background: "",
   };
   const emptyStyle: { color: string } = { color: "#fff" };
   return (
@@ -99,14 +99,17 @@ const Index: React.FC<Props> = ({ mobileNav }) => {
       <div className="w-full">
         <ul className="w-full">
           <li className={Styles.link}>
-            <Link to="/dashboard/users">
+            <NavLink
+              style={({ isActive }) => (isActive ? activeStyle : {})}
+              to="/"
+            >
               {" "}
               <span>
                 {" "}
                 <FontAwesomeIcon icon={faHome} />
               </span>
               <h3>Dashboard</h3>
-            </Link>
+            </NavLink>
           </li>
         </ul>
 
@@ -115,11 +118,14 @@ const Index: React.FC<Props> = ({ mobileNav }) => {
           <ul className="w-full">
             {customers.map((item, i) => (
               <li key={i} className={Styles.link}>
-                <Link to="/dashboard/users">
+                <NavLink
+                  style={({ isActive }) => (isActive ? activeStyle : {})}
+                  to={`/dashboard/${item.name}`}
+                >
                   {" "}
                   <img src={item.imgSrc} alt={item.imgSrc} />
                   <h3>{item.name}</h3>
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>
@@ -129,11 +135,14 @@ const Index: React.FC<Props> = ({ mobileNav }) => {
           <ul className="w-full">
             {business.map((item, i) => (
               <li key={i} className={Styles.link}>
-                <Link to="/dashboard/users">
+                <NavLink
+                  style={({ isActive }) => (isActive ? activeStyle : {})}
+                  to={`/dashboard/${item.name}`}
+                >
                   {" "}
                   <img src={item.imgSrc} alt={item.imgSrc} />
                   <h3>{item.name}</h3>
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>
@@ -143,11 +152,14 @@ const Index: React.FC<Props> = ({ mobileNav }) => {
           <ul className="w-full">
             {settings.map((item, i) => (
               <li key={i} className={Styles.link}>
-                <Link to="/dashboard/users">
+                <NavLink
+                  style={({ isActive }) => (isActive ? activeStyle : {})}
+                  to={`/dashboard/${item.name}`}
+                >
                   {" "}
                   <img src={item.imgSrc} alt={item.imgSrc} />
                   <h3>{item.name}</h3>
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>

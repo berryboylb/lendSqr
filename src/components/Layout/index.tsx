@@ -16,12 +16,14 @@ const Index: React.FC<Props> = ({ children }) => {
     }
   };
   return (
-    <div className="mx-auto max-w-[1700px]">
+    <div className="">
       <Header mobileNav={mobileNav} handleMobileNav={handleMobileNav} />
       <div className={styles.dashboard__}>
         {" "}
         <Sidebar mobileNav={mobileNav} />
-        <div className={styles.con__}>{children}</div>
+        <div className={`${styles.con__} mx-auto max-w-[1240px]`}>
+          {children}
+        </div>
       </div>
     </div>
   );

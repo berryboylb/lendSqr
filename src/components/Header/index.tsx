@@ -30,7 +30,7 @@ const Index: React.FC<Props> = ({ mobileNav, handleMobileNav }) => {
         <img
           src={Logo}
           alt="LendSquare"
-          className=" w-[130px] h-[36px] object-contain"
+          className="w-[130px] h-[36px] object-contain"
         />
       </div>
       <div className={styles.form}>
@@ -88,15 +88,15 @@ const Index: React.FC<Props> = ({ mobileNav, handleMobileNav }) => {
               <FontAwesomeIcon icon={faChevronDown} />
             </button>
           </div>
-          <div
-            onClick={handleMobileNav}
-            className={mobileNav ? styles.bro : styles.burger}
-          >
-            <div className={styles.line0}></div>
-            <div className={styles.line1}></div>
-            <div className={styles.line2}></div>
-          </div>
         </div>
+      </div>
+      <div
+        onClick={handleMobileNav}
+        className={mobileNav ? styles.bro : styles.burger}
+      >
+        <div className={styles.line0}></div>
+        <div className={styles.line1}></div>
+        <div className={styles.line2}></div>
       </div>
     </div>
   );

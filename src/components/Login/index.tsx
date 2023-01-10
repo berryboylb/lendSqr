@@ -21,10 +21,6 @@ const Index = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [passwordState, setPasswordState] = useState<boolean>(true);
   const [disabled, setDisabled] = useState<boolean>(false);
-  const [AuthValues] = useState<Login>({
-    email: "phemmynesce4life@gmail.com",
-    password: "test1234",
-  });
   const LoginValidation = yup.object().shape({
     email: yup
       .string()
@@ -32,7 +28,7 @@ const Index = () => {
       .required("Email is required"),
     password: yup
       .string()
-      .min(8, "Password must be at least at 6 characters")
+      .min(8, "Password must be at least at 8 characters")
       .required("Password is required"),
   });
   if (isAuthenticated) {
@@ -75,11 +71,11 @@ const Index = () => {
               const { email, password } = values;
               setLoading(true);
               if (
-                email === AuthValues.email &&
-                password === AuthValues.password
+                email  &&
+                password
               ) {
                 dispatch(authSuccess());
-                dispatch(userLoaded(AuthValues));
+                dispatch(userLoaded());
                 toast.success("Login Successful");
                 resetForm();
               } else {
@@ -132,7 +128,7 @@ const Index = () => {
                     onChange={props.handleChange("password")}
                   />
                   <span
-                    className={"text-xs uppercase text-[#39CDCC] "}
+                    className={"text-xs uppercase text-[#39CDCC] cursor-pointer "}
                     onClick={() => setPasswordState(!passwordState)}
                   >
                     {passwordState ? "show" : "hide"}
